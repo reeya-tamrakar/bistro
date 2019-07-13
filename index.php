@@ -1,8 +1,10 @@
 <?php include('header.php') ?>
-<h1>Welcome to Bistro!</h1>
-<section>
-	<h2>Slider</h2>
-	<p>We will place our slider over here.</p>
+
+<section><!-- Welcome Section -->
+	<div class="content"><!-- Content Container -->
+	<h1>Welcome to Bistro!</h1>
+	<p>Enjoy good food. Instantly!<br><br>Here at bistro, we provide best food at your doorsteps!</p>
+	</div>
 </section>
 </body>
 </html>
