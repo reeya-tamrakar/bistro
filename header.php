@@ -1,11 +1,22 @@
+<?php /* php to extract page name*/
+$directoryURI = $_SERVER['REQUEST_URI'];
+$path = parse_url($directoryURI, PHP_URL_PATH);
+$components = explode('/', $path);
+$first_part = $components[2];
+$first_part = basename($_SERVER['PHP_SELF'], ".php");
+
+include('includes/db.php');
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bistro - good food instantly</title>
+	<title><?php if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?>Bistro <?php if($first_part=="index"){echo " - good food instantly!";} ?></title>
 
 <!-- Links -->
 	<link rel="stylesheet" type="text/css" href="main.css"><!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="/bistro/css/bootstrap.min.css"><!-- Bootstrap CSS -->
+    <link rel="shortcut icon" type="image/png" href="/bistro/images/logo/favicon.png"/><!-- Link for favicon -->
 
 
 
@@ -17,15 +28,16 @@
 
 </head>
 <body>
+<header>
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-  <a href="#"><img src="/bistro/images/logo/logo.png" width="150"></a>
+  <a href="index.php"><img src="/bistro/images/logo/logo.png" width="150"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="nav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active mr-4">
-        <a class="nav-link" href="#">Home</a>
+      <li class="nav-item <?php if ($first_part=="index") {echo "active"; } else  {echo "";} ?> mr-4">
+        <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Menu </a>
                     <ul class="dropdown-menu megamenu">
@@ -116,11 +128,11 @@
                         </div>
                     </ul>
                 </li>
-      <li class="nav-item mr-4">
-        <a class="nav-link" href="#">Services</a>
+      <li class="nav-item <?php if ($first_part=="services") {echo "active"; } else  {echo "";} ?> mr-4">
+        <a class="nav-link" href="services.php">Services</a>
       </li>
-      <li class="nav-item mr-4">
-        <a class="nav-link" href="#">About</a>
+      <li class="nav-item <?php if ($first_part=="about") {echo "active"; } else  {echo "";} ?> mr-4">
+        <a class="nav-link" href="about.php">About</a>
       </li>
       <li class="nav-item mr-4 hidden-md">
       	<div class="input-group mb-2">
@@ -129,9 +141,8 @@
 		  </div>
 		</div>
       </li>
-      
-
        </a>
     </ul>
   </div>
 </nav>
+</header>

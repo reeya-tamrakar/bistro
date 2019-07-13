@@ -11,7 +11,7 @@
 	src: url('/bistro/fonts/raleway-bold.ttf');
 }
 *{
-	font-family: 'raleway',cursive;!important	
+	font-family: 'raleway',cursive;!important
 }
 body{/* main body css */
 	margin: 0;
@@ -90,4 +90,13 @@ body{/* main body css */
   .navbar-nav .open .dropdown-menu .dropdown-header {
     color: #fff;
   }
+}
+/* footer */
+.btn-circle{
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
 }

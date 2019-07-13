@@ -1,9 +1,8 @@
-<?php include('header.php') ?>
+<?php include('header.php'); ?>
 <div class="container">
 	<div class="jumbotron">
 		<h1>Welcome to Bistro!</h1>
 		<p>Enjoy good food. Instantly!<br><br>Here at bistro, we provide best food at your doorsteps!</p>
 	</div>	
 </div>
-</body>
-</html>
+<?php include('footer.php'); ?>
