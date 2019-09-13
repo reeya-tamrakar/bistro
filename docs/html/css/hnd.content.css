@@ -61,81 +61,179 @@ span.rvts11
 {
  font-weight: bold;
 }
-a.rvts12, span.rvts12
+span.rvts12
 {
- color: #0000ff;
- text-decoration: underline;
+ font-size: 16pt;
+ font-weight: bold;
 }
 a.rvts13, span.rvts13
 {
- font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif;
  color: #0000ff;
  text-decoration: underline;
 }
 span.rvts14
 {
- font-size: 16pt;
- font-weight: bold;
+ text-transform: uppercase;
 }
 span.rvts15
 {
- text-transform: uppercase;
+ color: #bfbfbf;
 }
 span.rvts16
 {
+ color: #7f7f7f;
+}
+span.rvts17
+{
  font-size: 7pt;
+ color: #7f7f7f;
  vertical-align: super;
 }
-span.rvts17 /* Font Style */
+span.rvts18
+{
+ font-size: 13pt;
+ font-weight: bold;
+}
+span.rvts19
+{
+ font-size: 13pt;
+ font-weight: bold;
+}
+span.rvts20
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #008080;
+}
+span.rvts21
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+ color: #008080;
+}
+span.rvts22
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+ color: #ff3333;
+}
+span.rvts23
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #ff3333;
+}
+span.rvts24
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-style: italic;
+ color: #ff3333;
+}
+a.rvts25, span.rvts25
+{
+ font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif;
+ color: #993399;
+ text-decoration: underline;
+}
+a.rvts26, span.rvts26
+{
+ color: #993399;
+ text-decoration: underline;
+}
+span.rvts27 /* Font Style */
 {
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #c0c0c0;
 }
-a.rvts18, span.rvts18 /* Font Style */
+a.rvts28, span.rvts28 /* Font Style */
 {
  font-family: 'Tahoma', 'Geneva', sans-serif;
  font-style: italic;
  color: #6666ff;
  text-decoration: underline;
 }
-span.rvts19
+span.rvts29
+{
+ font-style: italic;
+ font-weight: bold;
+}
+span.rvts30
+{
+ font-style: italic;
+}
+a.rvts31, span.rvts31
+{
+ font-style: italic;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts32
 {
  font-family: 'Courier New', 'Courier', monospace;
  color: #ff4848;
 }
-span.rvts20
+span.rvts33
 {
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: #ff0000;
 }
-span.rvts21
-{
- font-family: 'Courier New', 'Courier', monospace;
- color: #008080;
-}
-span.rvts22
+span.rvts34
 {
  font-family: 'Courier New', 'Courier', monospace;
  font-style: italic;
  color: #808080;
 }
-span.rvts23
+span.rvts35
 {
  font-family: 'Courier New', 'Courier', monospace;
  color: ;
 }
-span.rvts24
+span.rvts36
 {
  font-family: 'Courier New', 'Courier', monospace;
  color: #ffffff;
  background-color: #007bbf;
 }
-span.rvts25
+span.rvts37
 {
- font-size: 13pt;
+ font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
+ color: #ffffff;
+ text-transform: uppercase;
+ background-color: #007bbf;
+}
+span.rvts38
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts39
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+ color: #800080;
+}
+span.rvts40
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000000;
+}
+span.rvts41
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #0080ff;
+}
+span.rvts42
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #008000;
+}
+a.rvts43, span.rvts43
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000000;
+ text-decoration: underline;
 }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
@@ -168,7 +266,25 @@ p,ul,ol /* Paragraph Style */
  padding: 0px 0px 0px 0px;
  margin: 16px 0px 4px 0px;
 }
-.rvps6 /* Paragraph Style */
+.rvps6
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 4px 0px;
+}
+.rvps7
+{
+ line-height: 16px;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ background: #ffff99;
+ padding: 3px 3px 3px 3px;
+ margin: 0px 0px 0px 20px;
+}
+.rvps8 /* Paragraph Style */
 {
  text-align: center;
  border-color: #c0c0c0;
@@ -179,7 +295,7 @@ p,ul,ol /* Paragraph Style */
  padding: 2px 0px 2px 0px;
  margin: 7px 0px 7px 0px;
 }
-.rvps7
+.rvps9
 {
  line-height: 16px;
  border-color: #000000;
@@ -189,18 +305,14 @@ p,ul,ol /* Paragraph Style */
  padding: 3px 3px 3px 3px;
  margin: 0px 0px 0px 20px;
 }
-.rvps8
+.rvps10
 {
  line-height: 16px;
  margin: 4px 4px 4px 4px;
 }
-.rvps9
+.rvps11
 {
- text-align: left;
- text-indent: 0px;
- page-break-after: avoid;
- padding: 0px 0px 0px 0px;
- margin: 16px 0px 4px 0px;
+ line-height: 20px;
 }
 /* ========== Lists ========== */
 .list0 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;}
