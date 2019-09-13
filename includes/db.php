@@ -1,5 +1,10 @@
 <?php 
 
-$con = mysqli_connect("localhost","root","","bistro") or die("Connection failed.");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "bistro";
 
+// Create connection
+$con = mysqli_connect($servername,$username,$password,$db) or die("Connection failed.");
 ?>

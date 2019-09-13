@@ -10,6 +10,11 @@ if(isset($_GET['delete_sub'])){
 <html>
 <head>
 	<title>Admin Panel</title>
+
+<!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 <!-- Links -->
 	<link rel="stylesheet" type="text/css" href="style.css"><!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="/bistro/css/bootstrap.min.css"><!-- Bootstrap CSS -->

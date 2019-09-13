@@ -13,8 +13,12 @@ include('includes/db.php');
 <head>
 	<title><?php if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?>Bistro <?php if($first_part=="index"){echo " - good food instantly!";} ?></title>
 
+<!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Links -->
-	<link rel="stylesheet" type="text/css" href="main.css"><!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="/bistro/css/main.css"><!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="/bistro/css/bootstrap.min.css"><!-- Bootstrap CSS -->
     <link rel="shortcut icon" type="image/png" href="/bistro/images/logo/favicon.png"/><!-- Link for favicon -->
 
