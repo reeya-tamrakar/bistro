@@ -187,25 +187,31 @@
 <p></p>
 <h1 class="rvps5"><span class="rvts0"><span class="rvts14">php</span></span></h1>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<h3 class="rvps9"><span class="rvts0"><span class="rvts23">Extraction of page first name</span></span></h3>
+<h3 class="rvps9"><span class="rvts0"><span class="rvts25">Extraction of page first name</span></span></h3>
 <p class="rvps2"><span class="rvts6">Extraction of page first name contains the following code.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps7"><span class="rvts19">&lt;?php </span><span class="rvts20">/* php to extract page name*/</span><br/><span class="rvts17">$directoryURI</span><span class="rvts19">&nbsp;= </span><span class="rvts17">$_SERVER</span><span class="rvts19">['REQUEST_URI'];</span><br/><span class="rvts17">$path</span><span class="rvts19">&nbsp;= parse_url(</span><span class="rvts17">$directoryURI</span><span class="rvts19">, PHP_URL_PATH);</span><br/><span class="rvts17">$components</span><span class="rvts19">&nbsp;= explode('/', </span><span class="rvts17">$path</span><span class="rvts19">);</span><br/><span class="rvts17">$first_part</span><span class="rvts19">&nbsp;= </span><span class="rvts17">$components</span><span class="rvts19">[2];</span><br/><span class="rvts17">$first_part</span><span class="rvts19">&nbsp;= basename(</span><span class="rvts17">$_SERVER</span><span class="rvts19">['PHP_SELF'], ".php");</span><br/><span class="rvts18">include</span><span class="rvts19">('includes/db.php');</span><br/><span class="rvts19">?&gt;</span></p>
-<p class="rvps8"><span class="rvts21"><br/></span></p>
-<p class="rvps8"><span class="rvts22">$_SERVER['REQUEST_URI']</span><span class="rvts6">&nbsp;requests the url of the current page &amp; stores in </span><span class="rvts22">$directoryURI</span><span class="rvts6">&nbsp;variable.</span></p>
-<p class="rvps8"><span class="rvts22">parse_url($directoryURI, PHP_URL_PATH)</span><span class="rvts6">&nbsp;parses the url into php readable url &amp; stores in </span><span class="rvts22">$path</span><span class="rvts6">&nbsp;variable.</span></p>
-<p class="rvps8"><span class="rvts22">$components</span><span class="rvts6">&nbsp;is an array that uses </span><span class="rvts22">explode function</span><span class="rvts6">&nbsp;to parse </span><span class="rvts22">$path</span><span class="rvts6">&nbsp;variable &amp; stores each text block into each array space.</span></p>
-<p class="rvps8"><span class="rvts22">$first_part</span><span class="rvts6">&nbsp;stores the third component of the components array i.e. page name.</span></p>
-<p class="rvps8"><span class="rvts22">basename($_SERVER['PHP_SELF'], ".php")</span><span class="rvts6">&nbsp;strips off .php from the first name.</span></p>
+<p class="rvps7"><span class="rvts21">&lt;?php </span><span class="rvts22">/* php to extract page name*/</span><br/><span class="rvts19">$directoryURI</span><span class="rvts21">&nbsp;= </span><span class="rvts19">$_SERVER</span><span class="rvts21">['REQUEST_URI'];</span><br/><span class="rvts19">$path</span><span class="rvts21">&nbsp;= parse_url(</span><span class="rvts19">$directoryURI</span><span class="rvts21">, PHP_URL_PATH);</span><br/><span class="rvts19">$components</span><span class="rvts21">&nbsp;= explode('/', </span><span class="rvts19">$path</span><span class="rvts21">);</span><br/><span class="rvts19">$first_part</span><span class="rvts21">&nbsp;= </span><span class="rvts19">$components</span><span class="rvts21">[2];</span><br/><span class="rvts19">$first_part</span><span class="rvts21">&nbsp;= basename(</span><span class="rvts19">$_SERVER</span><span class="rvts21">['PHP_SELF'], ".php");</span><br/><span class="rvts20">include</span><span class="rvts21">('includes/db.php');</span><br/><span class="rvts21">?&gt;</span></p>
+<p class="rvps8"><span class="rvts23"><br/></span></p>
+<p class="rvps8"><span class="rvts24">$_SERVER['REQUEST_URI']</span><span class="rvts6">&nbsp;requests the url of the current page &amp; stores in </span><span class="rvts24">$directoryURI</span><span class="rvts6">&nbsp;variable.</span></p>
+<p class="rvps8"><span class="rvts24">parse_url($directoryURI, PHP_URL_PATH)</span><span class="rvts6">&nbsp;parses the url into php readable url &amp; stores in </span><span class="rvts24">$path</span><span class="rvts6">&nbsp;variable.</span></p>
+<p class="rvps8"><span class="rvts24">$components</span><span class="rvts6">&nbsp;is an array that uses </span><span class="rvts24">explode function</span><span class="rvts6">&nbsp;to parse </span><span class="rvts24">$path</span><span class="rvts6">&nbsp;variable &amp; stores each text block into each array space.</span></p>
+<p class="rvps8"><span class="rvts24">$first_part</span><span class="rvts6">&nbsp;stores the third component of the components array i.e. page name.</span></p>
+<p class="rvps8"><span class="rvts24">basename($_SERVER['PHP_SELF'], ".php")</span><span class="rvts6">&nbsp;strips off .php from the first name &amp; page name is obtained in $first_part.</span></p>
 <p class="rvps8"><a class="rvts12" href="dbphp.html">Read about include('includes/db.php');.</a></p>
-<h3 class="rvps9"><span class="rvts0"><span class="rvts23">Display the page name in the title</span></span></h3>
-<p class="rvps2"><span class="rvts6">This code is contained in the </span></p>
+<h3 class="rvps9"><span class="rvts0"><span class="rvts25">Display the page name in the title</span></span></h3>
+<p class="rvps2"><span class="rvts6">This code is contained in the title of this page. </span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps7"><span class="rvts21">&lt;?php </span><span class="rvts20">if</span><span class="rvts21">(</span><span class="rvts19">$first_part</span><span class="rvts21">!="index"){</span><span class="rvts20">echo</span><span class="rvts21">&nbsp;ucfirst(</span><span class="rvts19">$first_part</span><span class="rvts21">) . ' | ';} ?&gt;Bistro &lt;?php </span><span class="rvts20">if</span><span class="rvts21">(</span><span class="rvts19">$first_part</span><span class="rvts21">=="index"){</span><span class="rvts20">echo</span><span class="rvts21">&nbsp;" - good food instantly!";} ?&gt;</span><span class="rvts22">/* Write the first part into title. */</span></p>
+<p class="rvps2"><span class="rvts24"><br/></span></p>
+<p class="rvps2"><span class="rvts24">$first_part</span><span class="rvts6">&nbsp;is obtained from php code above.</span></p>
+<p class="rvps2"><span class="rvts24">if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?&gt;Bistro</span><span class="rvts6">&nbsp;if the stripped page name is </span><span class="rvts11">not</span><span class="rvts6">&nbsp;index, then display or </span><a class="rvts12" href="https://www.w3schools.com/php/php_echo_print.asp" target="_blank">echo</a><span class="rvts6">&nbsp;the firstpart. </span><span class="rvts24">ucfirst()</span><span class="rvts6">&nbsp;capitalizes the first word of page name &amp; inserts ' | '.</span></p>
+<p class="rvps2"><span class="rvts24">if($first_part=="index"){echo " - good food instantly!";}</span><span class="rvts6">&nbsp;if the page is index or homepage, print Bistro (printed without conditions) &amp; - good food instantly!</span></p>
 <h1 class="rvps5"><span class="rvts0"><span class="rvts14">html</span></span></h1>
 <hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
-<h3 class="rvps9"><span class="rvts0"><span class="rvts23">Extraction of page first name</span></span></h3>
+<h3 class="rvps9"><span class="rvts0"><span class="rvts25">Extraction of page first name</span></span></h3>
 <p class="rvps2"><span class="rvts6">Extraction of page first name contains the following code.</span></p>
 <p></p>
-<p class="rvps6" style="clear: both;"><span class="rvts15">Created with the Personal Edition of HelpNDoc: </span><a class="rvts16" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Free Kindle producer</a></p>
+<p class="rvps6" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Free Kindle producer</a></p>
 
             </div>
             

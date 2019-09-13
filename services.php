@@ -1,3 +1,3 @@
-<?php include('header.php');
+<?php include('/bistro/includes/header.php');
 echo "<h1>".ucfirst($first_part)."</h1>"; 
-include('footer.php');?>
+include('/bistro/includes/footer.php');?>

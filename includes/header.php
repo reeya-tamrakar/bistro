@@ -11,7 +11,7 @@ include('includes/db.php');
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?>Bistro <?php if($first_part=="index"){echo " - good food instantly!";} ?></title>
+	<title><?php if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?>Bistro <?php if($first_part=="index"){echo " - good food instantly!";} ?>/* Write the first part into title. */</title>
 
 <!-- Meta -->
     <meta charset="utf-8">
