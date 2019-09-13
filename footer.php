@@ -5,7 +5,9 @@
 			Box
 		</div>
 		<div class="col-sm-6 col-md-3 p-3">
-			Box
+			<h5>Site Options</h5>
+			<a href="/bistro/admin/index.php">Head to admin panel</a><br/>
+			<a href="/bistro/docs/index.html">Head to documentation</a><br/>
 		</div>
 		<div class="col-sm-6 col-md-3 p-3">
 			<h5>Find us</h5>
