@@ -246,6 +246,10 @@ span.rvts46
 {
  color: #993399;
 }
+span.rvts47
+{
+ font-weight: bold;
+}
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {
@@ -324,6 +328,11 @@ p,ul,ol /* Paragraph Style */
 {
  line-height: 16px;
  margin: 4px 4px 4px 4px;
+}
+.rvps12
+{
+ page-break-after: avoid;
+ margin: 16px 0px 4px 0px;
 }
 /* ========== Lists ========== */
 .list0 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;}

@@ -11,7 +11,7 @@ include('includes/db.php');
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?>Bistro <?php if($first_part=="index"){echo " - good food instantly!";} ?>/* Write the first part into title. */</title>
+	<title><?php if($first_part!="index"){echo ucfirst($first_part) . ' | ';} ?>Bistro <?php if($first_part=="index"){echo " - good food instantly!";} ?></title><!-- Write the first part into title. -->
 
 <!-- Meta -->
     <meta charset="utf-8">
@@ -32,12 +32,12 @@ include('includes/db.php');
 
 </head>
 <body>
-<header>
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-  <a href="index.php"><img src="/bistro/images/logo/logo.png" width="150"></a>
+<header><!-- Head part of the website -->
+<nav class="navbar navbar-expand-md navbar-light"><!-- Navigation Bar -->
+  <a href="index.php"><img src="/bistro/images/logo/logo.png" width="150"></a><!-- Logo -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button><!-- Hamburger icon (visible in <768px devices) -->
   <div class="collapse navbar-collapse" id="nav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item <?php if ($first_part=="index") {echo "active"; } else  {echo "";} ?> mr-4">
