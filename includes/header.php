@@ -28,7 +28,6 @@ include('includes/db.php');
 	<script src="/bistro/icons/friconix.js"></script><!-- Icons from friconix.com -->
 	<script src="/bistro/js/jquery.js"></script><!-- jQuery JS -->
 	<script src="/bistro/js/bootstrap.min.js"></script><!-- Bootstrap JS -->
-	<script src="/bistro/js/mega-menu.js"></script><!-- Bootstrap JS -->
 
 </head>
 <body>
@@ -38,17 +37,17 @@ include('includes/db.php');
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
     <span class="navbar-toggler-icon"></span>
   </button><!-- Hamburger icon (visible in <768px devices) -->
-  <div class="collapse navbar-collapse" id="nav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item <?php if ($first_part=="index") {echo "active"; } else  {echo "";} ?> mr-4">
+  <div class="collapse navbar-collapse" id="nav"><!-- Navbar, the collapsible part -->
+    <ul class="navbar-nav ml-auto"><!-- Navbar start -->
+      <li class="nav-item <?php if ($first_part=="index") {echo "active"; } else  {echo "";} ?> mr-4"><!-- php for making the class active -->
         <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Menu </a>
-                    <ul class="dropdown-menu megamenu">
+                    <ul class="dropdown-menu megamenu"><!-- Mega Menu -->
                     	<h1 class="text-center">Mega Menu</h1>
                         <div class="row">
-                            <li class="col-md-3 dropdown-item">
-                                <ul>
+                            <li class="col-md-3 dropdown-item"><!-- A column of Mega Menu -->
+                                <ul><!-- List of items of the megamenu -->
                                     <li class="dropdown-header">Cuisine Cat 1</li>
                                     <li><a href="#">Cold Drink</a>
                                     </li>
@@ -141,8 +140,7 @@ include('includes/db.php');
       <li class="nav-item mr-4 hidden-md">
       	<div class="input-group mb-2">
 		  <input type="text" class="form-control" placeholder="What's on tastebud?">
-		  <div class="input-group-append"><button type="button" class="btn btn-success"><i class="fi-xnsuxl-search"></i></button></span>
-		  </div>
+		  <div class="input-group-append"><button type="button" class="btn btn-success"><i class="fi-xnsuxl-search"></i></button></span></div>
 		</div>
       </li>
        </a>
