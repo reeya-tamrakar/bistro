@@ -266,6 +266,25 @@ span.rvts51
  font-weight: bold;
  text-decoration: underline;
 }
+span.rvts52
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ font-weight: bold;
+ color: #808000;
+}
+span.rvts53
+{
+ font-size: 12pt;
+ color: #222222;
+ background-color: #ffffff;
+}
+span.rvts54
+{
+ font-size: 12pt;
+ font-weight: bold;
+ color: #222222;
+ background-color: #ffffff;
+}
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
 {

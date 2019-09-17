@@ -1,5 +1,5 @@
 <footer>
-<div class="foot bg-light">
+<div class="foot bg-light"><!-- Light Background Footer -->
 	<div class="row">
 		<div class="col-sm-6 col-md-3 p-3">
 			Box
@@ -23,7 +23,7 @@
             </p><!-- p Finish -->
 		</div>
 		<div class="col-sm-6 col-md-3 p-3">
-			<form action="subs.php" method="post">
+			<form action="subs.php" method="post"><!-- Newsletter Subscription Form -->
 				<h5>Subscribe to news-letter</h5>
 				<div class="input-group mb-3">
 				  <input type="email" class="form-control" name="email" required="required">
@@ -34,7 +34,7 @@
 			</form>
 				<hr>
 				<h5>Keep in touch</h5>
-				<div class="btn-group d-flex justify-content-center" role="group">
+				<div class="btn-group d-flex justify-content-center" role="group"><!-- Icon group (Learn more at bootstrap documentation about this section) -->
 				  <button type="button" class="btn btn-secondary ml-2"><i class="fi-xnsuxl-facebook"></i></button>
 				  <button type="button" class="btn btn-secondary ml-2"><i class="fi-xnsuxl-instagram"></i></button>
 				  <button type="button" class="btn btn-secondary ml-2"><i class="fi-xnsuxl-twitter"></i></button>
@@ -44,9 +44,8 @@
 		</div>
 	</div>
 </div>
-<div class="copy bg-dark d-flex justify-content-between p-2">
-	<p class="text-white my-auto">&copy;2019 Bistro All Rights Reserved.</p>
-	<p class="text-white text-right my-auto">Admins <a href="admin/index.php">here</a></p>
+<div class="copy bg-dark p-2"><!-- Copyight text -->
+	<p class="text-white" align="center">&copy;2019 Bistro All Rights Reserved.</p>
 </div>
 </footer>
 </body>

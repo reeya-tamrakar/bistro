@@ -1,5 +1,5 @@
 <?php 
-include('includes/db.php');
+include('/bistro/includes/db.php');
 $email=$_POST['email'];
 
 echo $email;
