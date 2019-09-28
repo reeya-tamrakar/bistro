@@ -196,36 +196,49 @@ span.rvts36
 }
 span.rvts37
 {
+ font-size: 11pt;
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ color: #000000;
+ background-color: #ffffcc;
+}
+a.rvts38, span.rvts38
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #0070c0;
+ text-decoration: underline;
+}
+span.rvts39
+{
  font-style: italic;
  font-weight: bold;
 }
-span.rvts38
+span.rvts40
 {
  font-style: italic;
 }
-a.rvts39, span.rvts39
+a.rvts41, span.rvts41
 {
  font-style: italic;
  color: #0000ff;
  text-decoration: underline;
 }
-span.rvts40
+span.rvts42
 {
  font-family: 'Courier New', 'Courier', monospace;
  color: #ff4848;
 }
-span.rvts41
+span.rvts43
 {
  font-family: 'Courier New', 'Courier', monospace;
  font-style: italic;
  color: #808080;
 }
-span.rvts42
+span.rvts44
 {
  font-family: 'Courier New', 'Courier', monospace;
  color: ;
 }
-span.rvts43
+span.rvts45
 {
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
@@ -233,63 +246,63 @@ span.rvts43
  text-transform: uppercase;
  background-color: #007bbf;
 }
-span.rvts44
+span.rvts46
 {
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: #800080;
 }
-span.rvts45
+span.rvts47
 {
  font-family: 'Courier New', 'Courier', monospace;
  color: #008000;
 }
-span.rvts46
+span.rvts48
 {
  color: #000000;
 }
-a.rvts47, span.rvts47
+a.rvts49, span.rvts49
 {
  color: #000000;
  text-decoration: underline;
-}
-span.rvts48
-{
- color: #993399;
-}
-span.rvts49
-{
- font-weight: bold;
 }
 span.rvts50
 {
- text-decoration: underline;
+ color: #993399;
 }
 span.rvts51
 {
+ font-weight: bold;
 }
 span.rvts52
 {
- font-weight: bold;
+ text-decoration: underline;
 }
 span.rvts53
+{
+}
+span.rvts54
+{
+ font-weight: bold;
+}
+span.rvts55
 {
  font-weight: bold;
  text-decoration: underline;
 }
-span.rvts54
+span.rvts56
 {
  font-family: 'Courier New', 'Courier', monospace;
  font-weight: bold;
  color: #808000;
 }
-span.rvts55
+span.rvts57
 {
  font-size: 12pt;
  color: #222222;
  background-color: #ffffff;
 }
-span.rvts56
+span.rvts58
 {
  font-size: 12pt;
  font-weight: bold;
@@ -372,10 +385,20 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps11
 {
+ line-height: 20px;
+ border-color: #000000;
+ border-style: solid;
+ border-width: 1px;
+ background: #eaeaea;
+ padding: 3px 3px 3px 3px;
+ margin: 0px 0px 0px 20px;
+}
+.rvps12
+{
  line-height: 16px;
  margin: 4px 4px 4px 4px;
 }
-.rvps12
+.rvps13
 {
  page-break-after: avoid;
  margin: 16px 0px 4px 0px;
