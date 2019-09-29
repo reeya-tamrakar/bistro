@@ -28,7 +28,7 @@
   <meta property="og:title" content="db.php" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
-  <meta property="og:site_name" content="BISTRO DOCUMENTATION" /> 
+  <meta property="og:site_name" content="BISTRO DOCUMENTATION v1.0" /> 
 
   <!-- Bootstrap core CSS -->
   <link href="vendors/bootstrap-3.4.0/css/bootstrap.min.css" rel="stylesheet"/>
@@ -74,7 +74,7 @@
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
-    <h1>BISTRO DOCUMENTATION</h1>
+    <h1>BISTRO DOCUMENTATION v1.0</h1>
     
   </header>
 
@@ -173,7 +173,7 @@
                         <li><a href="includes.html">includes</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="includes.html" title="includes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="footerphp.html" title="footer.php" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="js.html" title="js" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="includes.html" title="includes" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="includes.html" title="includes" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="headerphp.html" title="header.php" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -186,9 +186,20 @@
                 
 <p></p>
 <p class="rvps4"><a class="rvts26" href="/bistro/index.php">Back to Bistro </a><a class="rvts25" href="/bistro/index.php">→</a></p>
-<p class="rvps3"><img width="600" height="600" alt="" style="padding : 1px;" src="lib/construction.jpg"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Read </span><a class="rvts13" href="includes.html">includes</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">db.php has all the required credentials and functions for connecting any php page to the SQL database.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps10"><span class="rvts20">&lt;?php </span><br/><span class="rvts31">$servername</span><span class="rvts20">&nbsp;= "localhost";</span><br/><span class="rvts31">$username</span><span class="rvts20">&nbsp;= "root";</span><br/><span class="rvts31">$password</span><span class="rvts20">&nbsp;= "";</span><br/><span class="rvts31">$db</span><span class="rvts20">&nbsp;= "bistro";</span><br/><span class="rvts33">// Create connection</span><br/><span class="rvts31">$con</span><span class="rvts20">&nbsp;= mysqli_connect(</span><span class="rvts31">$servername</span><span class="rvts20">,</span><span class="rvts31">$username</span><span class="rvts20">,</span><span class="rvts31">$password</span><span class="rvts20">,</span><span class="rvts31">$db</span><span class="rvts20">) </span><span class="rvts32">or</span><span class="rvts20">&nbsp;</span><span class="rvts32">die</span><span class="rvts20">("Connection failed.");</span><br/><span class="rvts20">?&gt;</span></p>
+<p class="rvps3"><span class="rvts26"><br/></span></p>
+<p class="rvps11"><span class="rvts30">$servername</span><span class="rvts6">&nbsp;holds the servername which is </span><span class="rvts11">localhost</span><span class="rvts6">&nbsp;in our case.</span></p>
+<p class="rvps11"><span class="rvts30">$username</span><span class="rvts6">&nbsp;holds the username which is </span><span class="rvts11">root</span><span class="rvts6">&nbsp;for us. It is the username for connecting to the db.</span></p>
+<p class="rvps11"><span class="rvts30">$password</span><span class="rvts6">&nbsp;holds the password which is </span><span class="rvts11">blank</span><span class="rvts6">&nbsp;for us. It is the password for connecting to the db.</span></p>
+<p class="rvps11"><span class="rvts30">$db</span><span class="rvts6">&nbsp;holds the database name for connection with the database which is </span><span class="rvts11">bistro</span><span class="rvts6">&nbsp;for us. We put data inside tables of a database.</span></p>
+<p class="rvps11"><span class="rvts30">mysqli_connect($servername,$username,$password,$db) or die("Connection failed.");</span><span class="rvts6">&nbsp;tries to connect with database &amp; syntax for mysqli_connect is (servername,username,password,databasename). If it dies or connection fails then "Connection failed" message is echoed.</span></p>
 <p></p>
-<p class="rvps8" style="clear: both;"><span class="rvts27">Created with the Personal Edition of HelpNDoc: </span><a class="rvts28" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
+<p class="rvps9" style="clear: both;"><span class="rvts28">Created with the Personal Edition of HelpNDoc: </span><a class="rvts29" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
 
             </div>
             

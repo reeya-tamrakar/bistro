@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
-  <title>raleway-light</title>
+  <title>index.php</title>
   <meta name="description" content="" /> 
   <meta name="keywords" content="">
 
@@ -21,11 +21,11 @@
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="raleway-light">
+  <meta name="twitter:title" content="index.php">
   <meta name="twitter:description" content="">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="raleway-light" />
+  <meta property="og:title" content="index.php" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="BISTRO DOCUMENTATION v1.0" /> 
@@ -163,33 +163,55 @@
 
     <article>
         <div id="topic-content" class="container-fluid" 
-		  data-hnd-id="raleway-light"
-		  data-hnd-context="23"
-		  data-hnd-title="raleway-light"
+		  data-hnd-id="indexphp1"
+		  data-hnd-context="28"
+		  data-hnd-title="index.php"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="fonts.html">fonts</a></li>
+                        <li><a href="admin.html">admin</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="fonts.html" title="fonts" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="raleway-bold.html" title="raleway-bold" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="icons.html" title="icons" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group-xs" role="group"><a class="btn btn-default" href="admin.html" title="admin" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="delete_subphp.html" title="delete_sub.php" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="stylecss.html" title="style.css" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
 
             <a id="main-content"></a>
 
-            <h2>raleway-light</h2>
+            <h2>index.php</h2>
 
             <div class="main-content">
                 
 <p></p>
 <p class="rvps4"><a class="rvts26" href="/bistro/index.php">Back to Bistro </a><a class="rvts25" href="/bistro/index.php">→</a></p>
-<p class="rvps4"><span class="rvts35"><br/></span></p>
-<p class="rvps2"><span class="rvts6">This is the </span><span class="rvts11">light version</span><span class="rvts6">&nbsp;of the raleway font. raleway is a google font which is downloaded from the </span><a class="rvts13" href="https://fonts.google.com" target="_blank">google fonts</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps5"><span class="rvts0"><span class="rvts12">php</span></span></h1>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps10"><span class="rvts20">&lt;?php </span><br/><span class="rvts32">include</span><span class="rvts20">('../includes/db.php'); </span><br/><span class="rvts31">$subs</span><span class="rvts20">&nbsp;= "SELECT * from subscriptions;"; </span><br/><span class="rvts31">$subsres</span><span class="rvts20">&nbsp;= </span><span class="rvts31">$con</span><span class="rvts20">-&gt;query(</span><span class="rvts31">$subs</span><span class="rvts20">); </span><br/><span class="rvts32">if</span><span class="rvts20">(</span><span class="rvts32">isset</span><span class="rvts20">(</span><span class="rvts31">$_GET</span><span class="rvts20">['delete_sub'])){</span><br/><span class="rvts20">&nbsp;</span><span class="rvts32">include</span><span class="rvts20">("delete_sub.php");</span><br/><span class="rvts20">}</span><br/><span class="rvts20">?&gt;</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps11"><span class="rvts6">first of all as soon as page loads up, db.php is included &amp; </span><span class="rvts30">$subs</span><span class="rvts6">&nbsp;SQL code selects all from subscriptions. The result is stored in </span><span class="rvts30">$subsres</span><span class="rvts6">&nbsp;&amp; executed by </span><span class="rvts30">$con-&gt;query($subs)</span><span class="rvts6">.</span></p>
+<p class="rvps11"><span class="rvts6">&amp; if the delete button is clicked or isset in the langauge of php. Then, </span><a class="rvts13" href="delete_subphp.html">delete_sub.php</a><span class="rvts6">&nbsp;is included.</span></p>
+<p class="rvps11"><span class="rvts6"><br/></span></p>
+<h3 class="rvps6"><span class="rvts0"><span class="rvts19">php in tbody of subscriptions table</span></span></h3>
+<p class="rvps2"><span class="rvts6">following php code is responsible for displaying of data from the SQL table into the website table.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps10"><span class="rvts20">&lt;?php</span><br/><span class="rvts20">&nbsp; </span><span class="rvts31">$i</span><span class="rvts20">=1;</span><br/><span class="rvts20">&nbsp; </span><span class="rvts32">if</span><span class="rvts20">&nbsp;(</span><span class="rvts31">$subsres</span><span class="rvts20">-&gt;num_rows &gt; 0) {</span><br/><span class="rvts20">&nbsp; </span><span class="rvts33">// if data greater than 0 </span><br/><span class="rvts20">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">while</span><span class="rvts20">(</span><span class="rvts31">$row</span><span class="rvts20">&nbsp;= </span><span class="rvts31">$subsres</span><span class="rvts20">-&gt;fetch_assoc()) {</span><br/><span class="rvts20">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts32">echo</span><span class="rvts20">&nbsp;"&lt;tr&gt;&lt;td&gt;" . </span><span class="rvts31">$i</span><span class="rvts20">&nbsp;. "&lt;/td&gt;&lt;td&gt;" . </span><span class="rvts31">$row</span><span class="rvts20">['email'] . "&lt;/td&gt;&lt;td&gt;&lt;a class='btn btn-primary text-white' href='index.php?delete_sub=" . </span><span class="rvts31">$row</span><span class="rvts20">['email'] . "'&gt;Delete&lt;/a&gt;&lt;/td&gt;";</span><br/><span class="rvts20">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts31">$i</span><span class="rvts20">++;</span><br/><span class="rvts20">&nbsp; &nbsp; &nbsp; }</span><br/><span class="rvts20">&nbsp; } </span><br/><span class="rvts20">&nbsp; </span><span class="rvts32">else</span><span class="rvts20">&nbsp;{</span><br/><span class="rvts20">&nbsp; &nbsp; &nbsp; </span><span class="rvts32">echo</span><span class="rvts20">&nbsp;"&lt;tr&gt;&lt;td colspan='3' class='text-center'&gt;0 results&lt;/td&gt;&lt;/tr&gt;";</span><br/><span class="rvts20">&nbsp; }</span><br/><span class="rvts20">&nbsp; ?&gt;</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps11"><span class="rvts6">i is initialized to 1. </span><span class="rvts30">$subsres</span><span class="rvts6">&nbsp;received from before is used in if condition. </span></p>
+<p class="rvps11"><span class="rvts6">if the no of rows is greater than 0 then loop. </span><span class="rvts30">$row = $subsres-&gt;fetch_assoc()</span><span class="rvts6">&nbsp;fetches each row at a time. then html inside styles the table. Email is printed and Deleted button is created and delete_sub is queried with the email itself. </span><span class="rvts30">$row['email']</span><span class="rvts6">&nbsp;places the 'email' from the row in that place.</span></p>
+<p class="rvps11"><span class="rvts6">else, print 0 results in the table.</span></p>
+<h1 class="rvps5"><span class="rvts0"><span class="rvts12">html</span></span></h1>
+<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps11"><span class="rvts30">&lt;meta&gt;</span><span class="rvts6">&nbsp;is same as of the </span><a class="rvts13" href="headerphp.html">header.php</a><span class="rvts6">.</span></p>
+<p class="rvps11"><a class="rvts13" href="bootstrapmincss.html">bootstrap.min.css</a><span class="rvts6">, </span><a class="rvts13" href="stylecss.html">style.css</a><span class="rvts6">&nbsp;&amp; </span><a class="rvts13" href="logo.html">favicon.png</a><span class="rvts6">&nbsp;are linked inside it.</span></p>
+<p class="rvps11"><span class="rvts6"><br/></span></p>
+<p class="rvps11"><span class="rvts6">a back button is placed inside it. A table frame with headers and contents provided by php is placed inside it displaying data.</span></p>
 <p></p>
-<p class="rvps9" style="clear: both;"><span class="rvts28">Created with the Personal Edition of HelpNDoc: </span><a class="rvts29" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
+<p class="rvps9" style="clear: both;"><span class="rvts28">Created with the Personal Edition of HelpNDoc: </span><a class="rvts29" href="https://www.helpndoc.com/feature-tour">Full-featured Help generator</a></p>
 
             </div>
             
