@@ -33,14 +33,14 @@ include('includes/db.php');
 <body>
 <header><!-- Head part of the website -->
 <nav class="navbar navbar-expand-md navbar-light"><!-- Navigation Bar -->
-  <a href="index.php"><img src="/bistro/images/logo/logo.png" width="150"></a><!-- Logo -->
+  <a href="/bistro/"><img src="/bistro/images/logo/logo.png" width="150"></a><!-- Logo -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
     <span class="navbar-toggler-icon"></span>
   </button><!-- Hamburger icon (visible in <768px devices) -->
   <div class="collapse navbar-collapse" id="nav"><!-- Navbar, the collapsible part -->
     <ul class="navbar-nav ml-auto"><!-- Navbar start -->
       <li class="nav-item <?php if ($first_part=="index") {echo "active"; } else  {echo "";} ?> mr-4"><!-- php for making the class active -->
-        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="/bistro/">Home</a>
       </li>
       <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Menu </a>
                     <ul class="dropdown-menu megamenu"><!-- Mega Menu -->
@@ -132,10 +132,10 @@ include('includes/db.php');
                     </ul>
                 </li>
       <li class="nav-item <?php if ($first_part=="services") {echo "active"; } else  {echo "";} ?> mr-4">
-        <a class="nav-link" href="services.php">Services</a>
+        <a class="nav-link" href="services">Services</a>
       </li>
       <li class="nav-item <?php if ($first_part=="about") {echo "active"; } else  {echo "";} ?> mr-4">
-        <a class="nav-link" href="about.php">About</a>
+        <a class="nav-link" href="about">About</a>
       </li>
       <li class="nav-item mr-4 hidden-md">
       	<div class="input-group mb-2">
