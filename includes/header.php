@@ -21,6 +21,8 @@ include('includes/db.php');
 	<link rel="stylesheet" type="text/css" href="/bistro/css/main.css"><!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="/bistro/css/bootstrap.min.css"><!-- Bootstrap CSS -->
     <link rel="shortcut icon" type="image/png" href="/bistro/images/logo/favicon.png"/><!-- Link for favicon -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="admin_theme.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
 
 
@@ -147,4 +149,4 @@ include('includes/db.php');
     </ul>
   </div>
 </nav>
-</header>
+</header><hr>
