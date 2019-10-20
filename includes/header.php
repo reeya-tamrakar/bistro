@@ -148,5 +148,5 @@ include('includes/db.php');
        </a>
     </ul>
   </div>
-</nav>
-</header><hr>
+</nav><hr>
+</header>

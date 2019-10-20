@@ -1,8 +1,365 @@
 <?php include('includes/header.php'); ?>
-<div class="container">
-	<div class="jumbotron">
-		<h1>Welcome to Bistro!</h1>
-		<p>Enjoy good food. Instantly!<br><br>Here at bistro, we provide best food at your doorsteps!</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+<style type="text/css">
+	.jumbotron{
+		position: absolute;
+		z-index: 2;
+	}
+	@media only screen and (max-width: 991.98px) {
+	  .jumbotron{
+	  	position: static;
+	  }
+	}
+	.item {
+	    position:relative;
+	    padding-top:20px;
+	    display:inline-block;
+	}
+	.notify-badge{
+	    position: absolute;
+	    right:-20px;
+	    top:10px;
+	    background:red;
+	    text-align: center;
+	    border-radius: 30px 30px 30px 30px;
+	    color:white;
+	    padding:5px 10px;
+	    font-size:20px;
+	}
+</style>
+<div class="container-fluid">
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+	  	<div class="jumbotron text-center">
+	  		<h1>Welcome to Bistro!<br><small class="text-muted">Sweet serendipity awaits to fill your senses with divine pleasures.</small></h1>
+	  		<p>A little oasis tucked away in the heart of Kathmandu, Bistro is the gem of continental, indian, nepalese & world fusion gastronomy, where cuisines are elevated to the forms of art, and ambience a perfect blend of taste & perfection</p>
+	  	</div>
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="/bistro/images/about_img.jpg" alt="First slide">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="/bistro/images/admin_bg.jpg" alt="Second slide">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="/bistro/images/services_bg.jpg" alt="Third slide">
+	    </div>
+	  </div>
 	</div>
-</div>
+	<div class="jumbotron text-center" style="background: transparent; position: static;">
+		<p class="display-4">What are you craving for? <i class="fas fa-drumstick-bite"></i></p>
+		<div class="input-group mb-3">
+		  <input type="text" class="form-control" placeholder="Cuisine Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+		  <div class="input-group-append">
+		    <button class="btn btn-outline-success" type="button"><i class="fab fa-searchengin"></i> Search</button>
+		  </div>
+		</div>
+	</div><hr>
+	<div class="jumbotron text-center" style="background: transparent; position: static;">
+		<p class="display-4">Why us <i class="fas fa-question"></i><br>not others <i class="far fa-question-circle"></i></p>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col">
+						<p class="display-3"><i class="fas fa-birthday-cake"></i><br><span class="num">200</span>+</p>
+						<p>Events & Parties</p>
+					</div>
+					<div class="col">
+						<p class="display-3"><i class="far fa-laugh-beam"></i><br><span class="num">1000</span>+</p>
+						<p>Satisfied Customers</p>
+					</div>
+				</div>
+				<div class="row my-5">
+					<div class="col my-5">
+						<p class="display-3"><i class="fas fa-birthday-cake"></i><br><span class="num">1</span> hr-*</p>
+						<p>Delievery Time<br><small class="text-muted">* - Within 10kms of bistro</small></p>
+					</div>
+					<div class="col my-5">
+						<p class="display-3"><i class="far fa-smile-beam"></i></p>
+						<p>Warm Hospitality</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<!-- Section: Testimonials v.2 -->
+				<section class="text-center">
+
+				  <!-- Section heading -->
+				  <h2 class="h1-responsive font-weight-bold my-5">What customers say!</h2>
+
+				  <div class="wrapper-carousel-fix">
+				    <!-- Carousel Wrapper -->
+				    <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
+				      data-interval="false">
+				      <!--Slides-->
+				      <div class="carousel-inner" role="listbox">
+				        <!--First slide-->
+				        <div class="carousel-item active">
+				          <div class="testimonial">
+				            <!--Avatar-->
+				            <div class="avatar mx-auto mb-4">
+				              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
+				                alt="First sample avatar image">
+				            </div>
+				            <!--Content-->
+				            <p>	
+				              <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+				              eos
+				              id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur
+				              adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore
+				              sit, aspernatur praesentium iste impedit quidem dolor veniam.
+				            </p>
+				            <h4 class="font-weight-bold">Anna Deynah</h4>
+				            <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+				          </div>
+				        </div>
+				        <!--First slide-->
+				        <!--Second slide-->
+				        <div class="carousel-item">
+				          <div class="testimonial">
+				            <!--Avatar-->
+				            <div class="avatar mx-auto mb-4">
+				              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid"
+				                alt="Second sample avatar image">
+				            </div>
+				            <!--Content-->
+				            <p>
+				              <i class="fas fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+				              odit
+				              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+				              porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+				              non numquam eius modi tempora incidunt ut labore. </p>
+				            <h4 class="font-weight-bold">Maria Kate</h4>
+				            <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+				          </div>
+				        </div>
+				        <!--Second slide-->
+				        <!--Third slide-->
+				        <div class="carousel-item">
+				          <div class="testimonial">
+				            <!--Avatar-->
+				            <div class="avatar mx-auto mb-4">
+				              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid"
+				                alt="Third sample avatar image">
+				            </div>
+				            <!--Content-->
+				            <p>
+				              <i class="fas fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse
+				              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+				              culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+				              error sit voluptatem accusantium doloremque laudantium.</p>
+				            <h4 class="font-weight-bold">John Doe</h4>
+				            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+				        </div>
+				        <!--Third slide-->
+				      </div>
+				      <!--Slides-->
+				      <!--Controls-->
+				      <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
+				        data-slide="prev">
+				        <span class="icon-prev" aria-hidden="true"></span>
+				        <span class="sr-only">Previous</span>
+				      </a>
+				      <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
+				        data-slide="next">
+				        <span class="icon-next" aria-hidden="true"></span>
+				        <span class="sr-only">Next</span>
+				      </a>
+				      <!--Controls-->
+				    </div>
+				    <!-- Carousel Wrapper -->
+				  </div>
+
+				</section>
+				<!-- Section: Testimonials v.2 -->
+			</div>
+		</div>
+
+		<h1><i class="fas fa-funnel-dollar"></i> Offers</h1>
+		<p>Dashain Maha Offer</p>
+		<div class="slick">
+			<div class="content">
+			  	<div class="item">
+			  		<a href="#">
+						<span class="notify-badge">10%</span>
+						<div class="thumbnail" >
+							<h4 class="text-center"><span class="label label-info">Nepali</span></h4>
+							<img src="http://placehold.it/300x300&text=Momo" class="img-responsive">
+							<div class="caption">
+								<div class="row">
+									<div class="col-md-4 col-xs-6">
+										<h3>Momo</h3>
+									</div>
+									<div class="col-md-8 col-xs-6 price">
+										<h3>
+										<label>Rs. 124</label>
+										</h3>
+									</div>
+								</div>
+								<p>prev. Rs. 140</p>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Details</a> 
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- Thumbnail -->
+					</a>
+				</div><!-- Item Wrapper -->
+			</div><!-- Content Wrapper -->
+			<div class="content">
+			  	<div class="item">
+			  		<a href="#">
+						<span class="notify-badge">10%</span>
+						<div class="thumbnail" >
+							<h4 class="text-center"><span class="label label-info">Nepali</span></h4>
+							<img src="http://placehold.it/300x300&text=Momo" class="img-responsive">
+							<div class="caption">
+								<div class="row">
+									<div class="col-md-4 col-xs-6">
+										<h3>Momo</h3>
+									</div>
+									<div class="col-md-8 col-xs-6 price">
+										<h3>
+										<label>Rs. 124</label>
+										</h3>
+									</div>
+								</div>
+								<p>prev. Rs. 140</p>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Details</a> 
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- Thumbnail -->
+					</a>
+				</div><!-- Item Wrapper -->
+			</div><!-- Content fluid Wrapper -->
+			<div class="content">
+			  	<div class="item">
+			  		<a href="#">
+						<span class="notify-badge">10%</span>
+						<div class="thumbnail" >
+							<h4 class="text-center"><span class="label label-info">Nepali</span></h4>
+							<img src="http://placehold.it/300x300&text=Momo" class="img-responsive">
+							<div class="caption">
+								<div class="row">
+									<div class="col-md-4 col-xs-6">
+										<h3>Momo</h3>
+									</div>
+									<div class="col-md-8 col-xs-6 price">
+										<h3>
+										<label>Rs. 124</label>
+										</h3>
+									</div>
+								</div>
+								<p>prev. Rs. 140</p>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Details</a> 
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- Thumbnail -->
+					</a>
+				</div><!-- Item Wrapper -->
+			</div><!-- Content fluid Wrapper -->
+			<div class="content">
+			  	<div class="item">
+			  		<a href="#">
+						<span class="notify-badge">10%</span>
+						<div class="thumbnail" >
+							<h4 class="text-center"><span class="label label-info">Nepali</span></h4>
+							<img src="http://placehold.it/300x300&text=Momo" class="img-responsive">
+							<div class="caption">
+								<div class="row">
+									<div class="col-md-4 col-xs-6">
+										<h3>Momo</h3>
+									</div>
+									<div class="col-md-8 col-xs-6 price">
+										<h3>
+										<label>Rs. 124</label>
+										</h3>
+									</div>
+								</div>
+								<p>prev. Rs. 140</p>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Details</a> 
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- Thumbnail -->
+					</a>
+				</div><!-- Item Wrapper -->
+			</div><!-- Content fluid Wrapper -->
+			<div class="content">
+			  	<div class="item">
+			  		<a href="#">
+						<span class="notify-badge">10%</span>
+						<div class="thumbnail" >
+							<h4 class="text-center"><span class="label label-info">Nepali</span></h4>
+							<img src="http://placehold.it/300x300&text=Momo" class="img-responsive">
+							<div class="caption">
+								<div class="row">
+									<div class="col-md-4 col-xs-6">
+										<h3>Momo</h3>
+									</div>
+									<div class="col-md-8 col-xs-6 price">
+										<h3>
+										<label>Rs. 124</label>
+										</h3>
+									</div>
+								</div>
+								<p>prev. Rs. 140</p>
+								<div class="row">
+									<div class="col-md-6">
+										<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Details</a> 
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- Thumbnail -->
+					</a>
+				</div><!-- Item Wrapper -->
+			</div><!-- Content fluid Wrapper -->
+		</div><!-- Slick Wrapper -->
+	</div>
+</div><!-- Container fluid Wrapper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script type="text/javascript">
+	$('.carousel').carousel({
+	  interval: 2000
+	});
+	$(".num").counterUp({
+	  delay: 10,
+	  time: 500
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script type="text/javascript">
+	$('.slick').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	  dots: true,
+	});
+</script>
 <?php include('includes/footer.php'); ?>
