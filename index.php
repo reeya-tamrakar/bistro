@@ -339,6 +339,10 @@
 				</div><!-- Item Wrapper -->
 			</div><!-- Content fluid Wrapper -->
 		</div><!-- Slick Wrapper -->
+		<h1>Featured Categories</h1>
+		<div class="slick">
+			
+		</div><!-- Slick Wrapper -->
 	</div>
 </div><!-- Container fluid Wrapper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
@@ -360,6 +364,30 @@
 	  autoplay: true,
 	  autoplaySpeed: 2000,
 	  dots: true,
+	  responsive: [
+	      {
+	        breakpoint: 1200,
+	        settings: {
+	          slidesToShow: 3,
+	          slidesToScroll: 1,
+	          infinite: true,
+	          dots: true
+	        }
+	      },
+	      {
+	        breakpoint: 1100,
+	        settings: {
+	          slidesToShow: 2,
+	          slidesToScroll: 2
+	        }
+	      },
+	      {
+	        breakpoint: 700,
+	        settings: {
+	          slidesToShow: 1,
+	          slidesToScroll: 1
+	        }
+	      }]
 	});
 </script>
 <?php include('includes/footer.php'); ?>
