@@ -59,7 +59,7 @@
       </nav>
 
       <div class="container-fluid"><!-- Content -->
-        <h1 class="mt-4"><i class="fas fa-user-friends"></i> Customers</h1>
+        <h1 class="mt-4"><i class="fas fa-users"></i> Users</h1>
         <div class="container"><!-- Container Wrapper -->
           <br>
           <!-- Nav tabs -->
@@ -75,46 +75,54 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div id="home" class="container tab-pane active"><br/>
-                <p>Register new customers.</p>
+                <p>Register new admins.</p>
                 <form>
                   <div class="form-group">
-                    <label for="catName">Customer Name</label>
+                    <label for="catName">Username</label>
                     <input type="text" class="form-control" id="catName">
                     <small id="nameHelpBlock" class="form-text text-muted">
-                      Customer name must be 10-25 characters long, not more.
+                      User name must be 10-25 characters long, not more.
                     </small>
                   </div>
                   <div class="form-group">
-                    <label for="catName">Customer Email</label>
+                    <label for="catName">User Email Address</label>
                     <input type="email" class="form-control" id="catName">
                     <small id="nameHelpBlock" class="form-text text-muted">
-                      Customer email must be valid.
+                      User email must be valid.
                     </small>
                   </div>
                   <div class="form-group">
-                    <label for="catName">Customer Phone</label>
+                    <label for="catName">Phone</label>
                     <input type="number" class="form-control" id="catName">
                   </div>
                   <div class="form-group">
-                    <label for="catName">Customer Location</label>
+                    <label for="catName">Location</label>
                     <input type="number" class="form-control" id="catName">
                     <small id="nameHelpBlock" class="form-text text-muted">
-                      Customer Location must be well-written, clear and concise to read & understand.
+                      User Location must be well-written, clear and concise to read & understand.
+                    </small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">User Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <small id="descHelpBlock" class="form-text text-muted">
+                      Description is about 200 characters long.
                     </small>
                   </div>
                     <a href="#" class="btn btn-success">Submit</a>
                 </form>
             </div><!-- Tab1 content wrapper -->
           <div id="menu1" class="container tab-pane fade"><br>
-            <p>These is the list of all the customers registered from this section as well as the website.</p>
+            <p>These is the list of all the users registered from this section as well as the website.</p>
               <table class="table table-responsive  ">
               <thead>
                 <tr>
-                  <th scope="col">Customer Id</th>
-                  <th scope="col">Customer Name</th>
-                  <th scope="col">Customer Email</th>
-                  <th scope="col">Customer Phone</th>
-                  <th scope="col">Customer Location</th>
+                  <th scope="col">User Id</th>
+                  <th scope="col">User Name</th>
+                  <th scope="col">User Email</th>
+                  <th scope="col">User Phone</th>
+                  <th scope="col">User Location</th>
+                  <th scope="col">User Description</th>
                   <th scope="col" colspan="2" class="text-center">Options</th>
                 </tr>
                 <tr>
@@ -123,6 +131,7 @@
                   <td>hari_babu@gmail.com</td>
                   <td>9875135352</td>
                   <td>Mangal Bazaar</td>
+                  <td>I am 23years well trained in this sector. I will do my best.</td>
                   <td><button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Edit</button></td>
                   <td><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</button></td>
                 </tr>
@@ -132,6 +141,7 @@
                   <td>radheshyam@rocketmail.com</td>
                   <td>9846531082</td>
                   <td>Tutepani</td>
+                  <td>I am smart!</td>
                   <td><button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"></i> Edit</button></td>
                   <td><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</button></td>
                 </tr>
