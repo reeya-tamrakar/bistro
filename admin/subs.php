@@ -1,5 +1,5 @@
 <?php 
-include('/bistro/includes/db.php'); 
+include('../includes/db.php'); 
 $subs = "SELECT * from subscriptions;"; 
 $subsres = $con->query($subs); 
 if(isset($_GET['delete_sub'])){

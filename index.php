@@ -27,6 +27,14 @@
 	    padding:5px 10px;
 	    font-size:20px;
 	}
+	.jumbotron-fluid.parallax{
+		background: url(/bistro/images/parallax-bg.jpg);
+		min-height: 500px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-attachment: fixed;
+	}
 </style>
 <div class="container-fluid">
 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -338,13 +346,85 @@
 					</a>
 				</div><!-- Item Wrapper -->
 			</div><!-- Content fluid Wrapper -->
-		</div><!-- Slick Wrapper -->
-		<h1>Featured Categories</h1>
+		</div><br><br><!-- Slick Wrapper -->
+		<h1><i class="fas fa-star"></i> Featured Categories</h1><br>
 		<div class="slick">
-			
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/nepali-food-featured-cat.png" alt="Card image cap">
+			  <div class="card-body">
+			    <h2 class="card-text">Nepali</h2>
+			  </div>
+			</a>
+			</div>
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/continental-food-featured-cat.png" alt="Card image cap" style="">
+			  <div class="card-body"><br><br><br><br><br><br>
+			    <h2 class="card-text">Continental</h2>
+			  </div>
+			</a>
+			</div>
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/indian-food-featured-cat.png" alt="Card image cap">
+			  <div class="card-body"><br><br>
+			    <h2 class="card-text">Indian</h2>
+			  </div>
+			</a>
+			</div>
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/chinese-food-featured-cat.png" alt="Card image cap">
+			  <div class="card-body"><br><br><br><br><br><br>
+			    <h2 class="card-text">Chinese</h2>
+			  </div>
+			</a>
+			</div>
+		</div><!-- Slick Wrapper --><br><br>
+		<h1><i class="fas fa-hotdog"></i> Featured Dishes</h1><br>
+		<div class="slick">
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/nepali-momo-featured.png" alt="Card image cap">
+			  <div class="card-body">
+			    <h2 class="card-text">Momo</h2>
+			  </div>
+			</a>
+			</div>
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/chinese-peach-garden-featured.png" alt="Card image cap" style="">
+			  <div class="card-body">
+			    <h2 class="card-text">Peach Garden</h2>
+			  </div>
+			</a>
+			</div>
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/continental-smoothie-featured.png" alt="Card image cap">
+			  <div class="card-body">
+			    <h2 class="card-text">Smoothie</h2>
+			  </div>
+			</a>
+			</div>
+			<div class="card border-0" style="">
+			<a href="#">
+			  <img class="card-img-top" src="/bistro/images/indian-biryani-featured.png" alt="Card image cap">
+			  <div class="card-body">
+			    <h2 class="card-text">Biryani</h2>
+			  </div>
+			</a>
+			</div>
 		</div><!-- Slick Wrapper -->
+	</div><!-- Jumbotron Container Wrapper -->
+	<div class="jumbotron-fluid parallax" data-stellar-background-ratio="0.5">
+	</div>
+	<div class="content text-white p-4 display-4" style="background:rgba(0,0,0,0.9);">
+			<p>The inception of Bistro can be attributed to the lack of quality eateries in Nepal. As a restaurant, we have struggled to come to terms with the standards the Nepali consumer is accepting on a daily basis.</p><a href="/bistro/about">Read More about bistro</a>
 	</div>
 </div><!-- Container fluid Wrapper -->
+<script src="/bistro/js/jquery.stellar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script type="text/javascript">
@@ -389,5 +469,8 @@
 	        }
 	      }]
 	});
+</script>
+<script type="text/javascript">
+	$.stellar();
 </script>
 <?php include('includes/footer.php'); ?>

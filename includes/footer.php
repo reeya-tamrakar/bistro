@@ -1,4 +1,4 @@
-<footer>
+	<footer>
 <div class="foot bg-light"><!-- Light Background Footer -->
 	<div class="row">
 		<div class="col-sm-6 col-md-3 p-3">
@@ -23,7 +23,7 @@
             </p><!-- p Finish -->
 		</div>
 		<div class="col-sm-6 col-md-3 p-3">
-			<form action="subs.php" method="post"><!-- Newsletter Subscription Form -->
+			<form action="/bistro/admin/subs.php" method="post"><!-- Newsletter Subscription Form -->
 				<h5>Subscribe to news-letter</h5>
 				<div class="input-group mb-3">
 				  <input type="email" class="form-control" name="email" required="required">
