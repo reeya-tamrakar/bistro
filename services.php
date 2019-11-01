@@ -1,6 +1,7 @@
+<!-- this is  -->
 <?php include('includes/header.php'); ?>
 <style type="text/css">
-	.jumbotron {
+	.jumbotron {/* centering picture */
 	  background-image: url("/bistro/images/services_bg.jpg");
 	  background-size: cover;
 	  height: 600px;
@@ -8,7 +9,7 @@
 	  justify-content: center;
 	  align-items: center;
 	}
-	.strokeme
+	.strokeme/* using stroke on the cover picture */
 	{
 	    color: white;
 	    text-shadow:

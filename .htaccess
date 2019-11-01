@@ -1,3 +1,5 @@
+# .htaccess is used for stripping off .php extension from the URL
+
 # for php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
