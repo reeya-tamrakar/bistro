@@ -1,6 +1,6 @@
 <?php 
 session_start();
-/* php to extract page nam cx0';lkjhgfdzdfkl;'0/.kjhgfdxzzxcvbn,..,mnbvcxznbvjhgfdzsdfghjk..............................................,jhgfdzxcvbnc,,vcxxg/.,xx,e*/
+/* php to extract page name*/
 $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
 $components = explode('/', $path);
@@ -152,7 +152,7 @@ if(isset($_POST['login'])){
 
 
 <!-- Scripts -->
-	<script defer src=https://friconix.com/cdn/friconix.js></script><!-- Icons from friconix.com -->
+
 	<script src="/bistro/js/jquery.js"></script><!-- jQuery JS -->
 	<script src="/bistro/js/bootstrap.min.js"></script><!-- Bootstrap JS -->
 
