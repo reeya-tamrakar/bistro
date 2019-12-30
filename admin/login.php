@@ -18,11 +18,11 @@ include('../includes/db.php');
 
 <!-- Style -->
 	<style type="text/css">
-		body{
+		body{/* reset everything */
 			margin: 0;
 			padding: 0;
 		}
-		.container-fluid{
+		.container-fluid{/* the main background */
 			background: url('/bistro/images/admin_bg.jpg');
 			width: 100%;
 			height: 100vh;
@@ -31,7 +31,7 @@ include('../includes/db.php');
 			justify-content: center;
 			align-items: center;
 		}
-		.logbx{
+		.logbx{/*login box*/
 			background: white;
 			padding: 40px;
 			z-index: 0;
@@ -40,7 +40,7 @@ include('../includes/db.php');
 		form{
 			z-index: 1;
 		}
-		.logbx input{
+		.logbx input{/*input boxes*/
 			display: block;
 			margin: 5px;
 			height: 40px;
@@ -50,12 +50,13 @@ include('../includes/db.php');
 <body>
 <div class="container-fluid">
 	<div class="logbx">
-		<form action="" method="post">
+		<form method="post">
 			<h2>Admin Login</h2>
 			<input type="text" name="user" placeholder="Username" required="required">
-			<input type="1'password" name="pass" placeholder="Password" required="required">
+			<input type="password" name="pass" placeholder="Password" required="required">
 			<input type="submit" name="log" value="Login" class="btn btn-primary">
 		</form>
+		<a href="/bistro/">Back to the website</a>	
 	</div>
 </div>
 </body>
@@ -66,21 +67,28 @@ include('../includes/db.php');
         
         $username = mysqli_real_escape_string($con,$_POST['user']);
         
-        $password = mysqli_real_escape_string($con,$_POST['pass']);
+        $password = md5(mysqli_real_escape_string($con,$_POST['pass']));
         
         $get_admin = "SELECT * FROM admins WHERE username='$username' AND password='$password'";
         
         $run_admin = mysqli_query($con,$get_admin);
-        
+
         $count = mysqli_num_rows($run_admin);
+
+        $run_admin = mysqli_fetch_assoc($run_admin);
         
         if($count==1){
             
             $_SESSION['user']=$username;
+            $_SESSION['email']=$run_admin['email'];
+            $_SESSION['id']=$run_admin['id'];
+            $_SESSION['phone']=$run_admin['phone'];
+            $_SESSION['location']=$run_admin['location']	;
+            $_SESSION['description']=$run_admin['description'];
             
             echo "<script>alert(' Welcome Back $username')</script>";
             
-            echo "<script>window.open('index.php?name=dashboard','_self')</script>";
+            echo "<script>window.open('index.php?action=dashboard','_self')</script>";
             
         }else{
             

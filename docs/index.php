@@ -10,7 +10,7 @@
 <div id="app">
 	<h1>Welcome to Bistro Documentation!</h1>
 	<a href="/bistro/docs/html/Bistro.html">Proceed to the documentation</a><br/><br/><br/><br/>
-	<a href="/bistro/index.php">Back to the website</a><br/>		
+	<a href="/bistro/">Back to the website</a><br/>		
 </div><!-- Docsify.js-->
 <script>
     window.$docsify = {

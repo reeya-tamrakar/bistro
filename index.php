@@ -1,4 +1,4 @@
-<?php include('includes/header.php'); ?>
+<?php include('includes/header.php'); ?><!-- Header Link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
 <style type="text/css">
@@ -10,11 +10,14 @@
 	  .jumbotron{
 	  	position: static;
 	  }
-	}
+	}/* Jumbotron css for enhancement of it & responsiveness */
+	.carousel-caption{
+		background: rgba(0,0,0,0.8);
+	}/* to make carousel caption easily visible */
 	.item {
 	    position:relative;
 	    padding-top:20px;
-	    display:inline-block;
+	    display:inline-block;/* offers part item */
 	}
 	.notify-badge{
 	    position: absolute;
@@ -25,7 +28,7 @@
 	    border-radius: 30px 30px 30px 30px;
 	    color:white;
 	    padding:5px 10px;
-	    font-size:20px;
+	    font-size:20px;/* notification badge on the top of the offers part */
 	}
 	.jumbotron-fluid.parallax{
 		background: url(/bistro/images/parallax-bg.jpg);
@@ -33,28 +36,37 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-attachment: fixed;
+		background-attachment: fixed;/* parallax css */
 	}
 </style>
 <div class="container-fluid">
-	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"><!-- a simple bootstrap carousel -->
 	  <div class="carousel-inner">
-	  	<div class="jumbotron text-center">
+	  	<div class="jumbotron text-center"><!-- Welcome text on the top -->
 	  		<h1>Welcome to Bistro!<br><small class="text-muted">Sweet serendipity awaits to fill your senses with divine pleasures.</small></h1>
 	  		<p>A little oasis tucked away in the heart of Kathmandu, Bistro is the gem of continental, indian, nepalese & world fusion gastronomy, where cuisines are elevated to the forms of art, and ambience a perfect blend of taste & perfection</p>
 	  	</div>
-	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="/bistro/images/about_img.jpg" alt="First slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="/bistro/images/admin_bg.jpg" alt="Second slide">
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="/bistro/images/services_bg.jpg" alt="Third slide">
-	    </div>
+	  	<?php /* carousel php i.e. controlled from the admin panel */
+	  	$tbl_select = "SELECT * from slides";
+	  	$tbl = mysqli_query($con,$tbl_select);
+	  	$tblrow = mysqli_fetch_assoc($tbl);
+	  	echo '<div class="carousel-item active">
+		      <img class="d-block w-100" src="uploads/slides/' . $tblrow['img'] . '" alt="First slide">
+		    <div class="carousel-caption d-none d-sm-block">
+          <p>' . $tblrow['name'] . '</p>
+        </div></div>';/* first carousel image, i.e. active. */
+	  	while($tblrow = mysqli_fetch_assoc($tbl)){
+	  		echo '<div class="carousel-item">
+		      <img class="d-block w-100" src="uploads/slides/' . $tblrow['img'] . '" alt="Slide">
+		    <div class="carousel-caption d-none d-sm	-block">
+          <p>' . $tblrow['name'] . '</p>
+        </div></div>';/* rest of the other carousel images. */
+	  	}
+	  	
+	  	 ?>
 	  </div>
 	</div>
-	<div class="jumbotron text-center" style="background: transparent; position: static;">
+	<div class="jumbotron text-center" style="background: transparent; position: static;"><!-- search bar after the dynamic carousel (doesn't work yet) -->
 		<p class="display-4">What are you craving for? <i class="fas fa-drumstick-bite"></i></p>
 		<div class="input-group mb-3">
 		  <input type="text" class="form-control" placeholder="Cuisine Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -63,7 +75,7 @@
 		  </div>
 		</div>
 	</div><hr>
-	<div class="jumbotron text-center" style="background: transparent; position: static;">
+	<div class="jumbotron text-center" style="background: transparent; position: static;"><!-- left why us section -->
 		<p class="display-4">Why us <i class="fas fa-question"></i><br>not others <i class="far fa-question-circle"></i></p>
 		<div class="row">
 			<div class="col-md-6">
@@ -183,9 +195,9 @@
 			</div>
 		</div>
 
-		<h1><i class="fas fa-funnel-dollar"></i> Offers</h1>
+		<h1><i class="fas fa-funnel-dollar"></i> Offers</h1><!-- Offers section -->
 		<p>Dashain Maha Offer</p>
-		<div class="slick">
+		<div class="slick"><!-- a simple bootstrap slick (controls in the bottom), isn't dynamic yet -->
 			<div class="content">
 			  	<div class="item">
 			  		<a href="#">
@@ -348,7 +360,7 @@
 			</div><!-- Content fluid Wrapper -->
 		</div><br><br><!-- Slick Wrapper -->
 		<h1><i class="fas fa-star"></i> Featured Categories</h1><br>
-		<div class="slick">
+		<div class="slick"><!-- a simple bootstrap slick (controls in the bottom), isn't dynamic yet -->
 			<div class="card border-0" style="">
 			<a href="#">
 			  <img class="card-img-top" src="/bistro/images/nepali-food-featured-cat.png" alt="Card image cap">
@@ -383,7 +395,7 @@
 			</div>
 		</div><!-- Slick Wrapper --><br><br>
 		<h1><i class="fas fa-hotdog"></i> Featured Dishes</h1><br>
-		<div class="slick">
+		<div class="slick"><!-- a simple bootstrap slick (controls in the bottom), isn't dynamic yet -->
 			<div class="card border-0" style="">
 			<a href="#">
 			  <img class="card-img-top" src="/bistro/images/nepali-momo-featured.png" alt="Card image cap">
@@ -418,27 +430,27 @@
 			</div>
 		</div><!-- Slick Wrapper -->
 	</div><!-- Jumbotron Container Wrapper -->
-	<div class="jumbotron-fluid parallax" data-stellar-background-ratio="0.5">
+	<div class="jumbotron-fluid parallax" data-stellar-background-ratio="0.5"><!-- a parallax that is created by using stellar.js -->
 	</div>
 	<div class="content text-white p-4 display-4" style="background:rgba(0,0,0,0.9);">
 			<p>The inception of Bistro can be attributed to the lack of quality eateries in Nepal. As a restaurant, we have struggled to come to terms with the standards the Nepali consumer is accepting on a daily basis.</p><a href="/bistro/about">Read More about bistro</a>
 	</div>
 </div><!-- Container fluid Wrapper -->
-<script src="/bistro/js/jquery.stellar.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="/bistro/js/jquery.stellar.js"></script><!-- stellar.js which uses jquery for parallax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script><!-- counterup.js which uses jquery for counting up in why us section -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script><!-- waypoints is a reference for counterup -->
 <script type="text/javascript">
-	$('.carousel').carousel({
+	$('.carousel').carousel({/*jquery for carousel*/
 	  interval: 2000
 	});
-	$(".num").counterUp({
+	$(".num").counterUp({/*jquery for counterUp*/
 	  delay: 10,
 	  time: 500
 	});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 <script type="text/javascript">
-	$('.slick').slick({
+	$('.slick').slick({/*jquery for slicks (slick is responsive.)*/
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
 	  autoplay: true,
@@ -471,6 +483,6 @@
 	});
 </script>
 <script type="text/javascript">
-	$.stellar();
+	$.stellar();/*stellar.js initialization*/
 </script>
-<?php include('includes/footer.php'); ?>
+<?php include('includes/footer.php'); ?><!-- Footer Link -->
